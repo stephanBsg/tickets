@@ -1,0 +1,35 @@
+<h1>Listing ticket_items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Created on</th>
+      <th>Assigned on</th>
+      <th>Description</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ticket_items.each do |ticket_item| %>
+      <tr>
+        <td><%= ticket_item.name %></td>
+        <td><%= ticket_item.created_on %></td>
+        <td><%= ticket_item.assigned_on %></td>
+        <td><%= ticket_item.description %></td>
+        <td><%= ticket_item.user_id %></td>
+        <td><%= link_to 'Show', ticket_item %></td>
+        <td><%= link_to 'Edit', edit_ticket_item_path(ticket_item) %></td>
+        <td><%= link_to 'Destroy', ticket_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ticket item', new_ticket_item_path %>
