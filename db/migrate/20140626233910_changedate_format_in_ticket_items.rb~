@@ -1,0 +1,5 @@
+class ChangedateFormatInTicketItems < ActiveRecord::Migration
+  def change
+   add_column :ticket_items, :finished_on, :datetime
+  end
+end

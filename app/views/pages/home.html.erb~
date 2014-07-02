@@ -1,0 +1,5 @@
+<%= form_for @ticket_item.new do |f| %>
+<input type="Submit" value="Log Call" style="width:200px;height:100px;color:white;font-size:20px;background-color:gray;" />
+<% end %>
+
+

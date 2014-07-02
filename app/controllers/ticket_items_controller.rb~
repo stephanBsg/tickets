@@ -24,7 +24,7 @@ class TicketItemsController < ApplicationController
   # POST /ticket_items
   # POST /ticket_items.json
   def create
-  @ticket_item = TicketItem.new
+  @ticket_item = TicketItem.new(params[:post]) 
 #   @post.number = params[:post][:number].gsub(/,/,'.').to_f # => 12.13
    
     @ticket_item.created_on = DateTime.now
