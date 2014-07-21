@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140702232815) do
+ActiveRecord::Schema.define(version: 20140710184157) do
 
   create_table "ticket_items", force: true do |t|
     t.string   "name"
@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(version: 20140702232815) do
     t.datetime "finished_on"
     t.datetime "created_on"
     t.datetime "assigned_on"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zipcode"
+    t.string   "mainstreet"
+    t.string   "crossingstreet"
+    t.string   "intersectionnum"
   end
 
   create_table "users", force: true do |t|

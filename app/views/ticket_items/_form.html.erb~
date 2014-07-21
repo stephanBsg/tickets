@@ -64,8 +64,7 @@
   </div>
   <%= f.hidden_field :id %>
   <div class="actions">
-        <%= f.submit %> &nbsp;
-        <%= f.submit "Assign to me"%> &nbsp;
+    <%= f.submit "Assign to me"%> &nbsp;
     <%= f.submit "Close" %> &nbsp;   
   </div>
 </fieldset>  

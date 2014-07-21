@@ -112,7 +112,6 @@
                         $to.val('');
                         $end.val('');
                         alert("Can't choose Cross Street without Primary");
-                        $primary.focus();
                     }
                 }
 

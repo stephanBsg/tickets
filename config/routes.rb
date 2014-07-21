@@ -5,7 +5,7 @@ Tickets::Application.routes.draw do
   resources :users
 
   get '/home'                          => 'pages#home'
-
+  get '/mines'             => 'ticket_items#mines'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
