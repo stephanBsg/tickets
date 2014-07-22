@@ -1,4 +1,0 @@
-class ChangedateFormat8InTicketItems < ActiveRecord::Migration
-  def change
-  end
-end
